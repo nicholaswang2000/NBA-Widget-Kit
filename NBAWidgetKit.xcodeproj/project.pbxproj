@@ -13,7 +13,39 @@
 		C0C074C625AD364A0071BEA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C074C425AD364A0071BEA2 /* Main.storyboard */; };
 		C0C074C825AD364D0071BEA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C074C725AD364D0071BEA2 /* Assets.xcassets */; };
 		C0C074CB25AD364D0071BEA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C074C925AD364D0071BEA2 /* LaunchScreen.storyboard */; };
+		C0C074DA25AD365E0071BEA2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C074D925AD365E0071BEA2 /* WidgetKit.framework */; };
+		C0C074DC25AD365E0071BEA2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C074DB25AD365E0071BEA2 /* SwiftUI.framework */; };
+		C0C074DF25AD365E0071BEA2 /* NBAWidgetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C074DE25AD365E0071BEA2 /* NBAWidgetModule.swift */; };
+		C0C074E225AD36600071BEA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C074E125AD36600071BEA2 /* Assets.xcassets */; };
+		C0C074E425AD36600071BEA2 /* NBAWidgetModule.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C0C074E025AD365E0071BEA2 /* NBAWidgetModule.intentdefinition */; };
+		C0C074E525AD36600071BEA2 /* NBAWidgetModule.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C0C074E025AD365E0071BEA2 /* NBAWidgetModule.intentdefinition */; };
+		C0C074E825AD36600071BEA2 /* NBAWidgetModuleExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0C074D725AD365E0071BEA2 /* NBAWidgetModuleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0C074F525AED3EA0071BEA2 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C074EF25AED3CF0071BEA2 /* DataProvider.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0C074E625AD36600071BEA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C074B325AD364A0071BEA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0C074D625AD365E0071BEA2;
+			remoteInfo = NBAWidgetModuleExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0C074EC25AD36610071BEA2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0C074E825AD36600071BEA2 /* NBAWidgetModuleExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C0C074BB25AD364A0071BEA2 /* NBAWidgetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBAWidgetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +56,14 @@
 		C0C074C725AD364D0071BEA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0C074CA25AD364D0071BEA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0C074CC25AD364D0071BEA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C074D725AD365E0071BEA2 /* NBAWidgetModuleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NBAWidgetModuleExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C074D925AD365E0071BEA2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C0C074DB25AD365E0071BEA2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C0C074DE25AD365E0071BEA2 /* NBAWidgetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAWidgetModule.swift; sourceTree = "<group>"; };
+		C0C074E025AD365E0071BEA2 /* NBAWidgetModule.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = NBAWidgetModule.intentdefinition; sourceTree = "<group>"; };
+		C0C074E125AD36600071BEA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0C074E325AD36600071BEA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C074EF25AED3CF0071BEA2 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +74,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0C074D425AD365E0071BEA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C074DC25AD365E0071BEA2 /* SwiftUI.framework in Frameworks */,
+				C0C074DA25AD365E0071BEA2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				C0C074BD25AD364A0071BEA2 /* NBAWidgetKit */,
+				C0C074DD25AD365E0071BEA2 /* NBAWidgetModule */,
+				C0C074D825AD365E0071BEA2 /* Frameworks */,
 				C0C074BC25AD364A0071BEA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C0C074BB25AD364A0071BEA2 /* NBAWidgetKit.app */,
+				C0C074D725AD365E0071BEA2 /* NBAWidgetModuleExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +119,27 @@
 			path = NBAWidgetKit;
 			sourceTree = "<group>";
 		};
+		C0C074D825AD365E0071BEA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0C074D925AD365E0071BEA2 /* WidgetKit.framework */,
+				C0C074DB25AD365E0071BEA2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0C074DD25AD365E0071BEA2 /* NBAWidgetModule */ = {
+			isa = PBXGroup;
+			children = (
+				C0C074EF25AED3CF0071BEA2 /* DataProvider.swift */,
+				C0C074DE25AD365E0071BEA2 /* NBAWidgetModule.swift */,
+				C0C074E025AD365E0071BEA2 /* NBAWidgetModule.intentdefinition */,
+				C0C074E125AD36600071BEA2 /* Assets.xcassets */,
+				C0C074E325AD36600071BEA2 /* Info.plist */,
+			);
+			path = NBAWidgetModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +150,34 @@
 				C0C074B725AD364A0071BEA2 /* Sources */,
 				C0C074B825AD364A0071BEA2 /* Frameworks */,
 				C0C074B925AD364A0071BEA2 /* Resources */,
+				C0C074EC25AD36610071BEA2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C0C074E725AD36600071BEA2 /* PBXTargetDependency */,
 			);
 			name = NBAWidgetKit;
 			productName = NBAWidgetKit;
 			productReference = C0C074BB25AD364A0071BEA2 /* NBAWidgetKit.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C0C074D625AD365E0071BEA2 /* NBAWidgetModuleExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C074E925AD36610071BEA2 /* Build configuration list for PBXNativeTarget "NBAWidgetModuleExtension" */;
+			buildPhases = (
+				C0C074D325AD365E0071BEA2 /* Sources */,
+				C0C074D425AD365E0071BEA2 /* Frameworks */,
+				C0C074D525AD365E0071BEA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBAWidgetModuleExtension;
+			productName = NBAWidgetModuleExtension;
+			productReference = C0C074D725AD365E0071BEA2 /* NBAWidgetModuleExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +189,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					C0C074BA25AD364A0071BEA2 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					C0C074D625AD365E0071BEA2 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -115,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				C0C074BA25AD364A0071BEA2 /* NBAWidgetKit */,
+				C0C074D625AD365E0071BEA2 /* NBAWidgetModuleExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +226,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0C074D525AD365E0071BEA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C074E225AD36600071BEA2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,13 +241,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C074E525AD36600071BEA2 /* NBAWidgetModule.intentdefinition in Sources */,
 				C0C074C325AD364A0071BEA2 /* ViewController.swift in Sources */,
 				C0C074BF25AD364A0071BEA2 /* AppDelegate.swift in Sources */,
 				C0C074C125AD364A0071BEA2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0C074D325AD365E0071BEA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C074F525AED3EA0071BEA2 /* DataProvider.swift in Sources */,
+				C0C074E425AD36600071BEA2 /* NBAWidgetModule.intentdefinition in Sources */,
+				C0C074DF25AD365E0071BEA2 /* NBAWidgetModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0C074E725AD36600071BEA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0C074D625AD365E0071BEA2 /* NBAWidgetModuleExtension */;
+			targetProxy = C0C074E625AD36600071BEA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0C074C425AD364A0071BEA2 /* Main.storyboard */ = {
@@ -284,6 +407,7 @@
 		C0C074D025AD364D0071BEA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +427,7 @@
 		C0C074D125AD364D0071BEA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +439,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.NBAWidgetKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0C074EA25AD36610071BEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65C43N9B6P;
+				INFOPLIST_FILE = NBAWidgetModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.NBAWidgetKit.NBAWidgetModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0C074EB25AD36610071BEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65C43N9B6P;
+				INFOPLIST_FILE = NBAWidgetModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.NBAWidgetKit.NBAWidgetModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +503,15 @@
 			buildConfigurations = (
 				C0C074D025AD364D0071BEA2 /* Debug */,
 				C0C074D125AD364D0071BEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C074E925AD36610071BEA2 /* Build configuration list for PBXNativeTarget "NBAWidgetModuleExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C074EA25AD36610071BEA2 /* Debug */,
+				C0C074EB25AD36610071BEA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
