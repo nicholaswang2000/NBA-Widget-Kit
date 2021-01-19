@@ -14,4 +14,8 @@ class DataProvider {
         return strings.randomElement()!
     }
     
+    static func getUserDefaultString() -> String {
+        return UserDefaults(suiteName: "group.com.nick.NBAWidgetKit")!.string(forKey: "test")!
+    }
+    
 }
